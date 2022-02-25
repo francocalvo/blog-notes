@@ -34,3 +34,4 @@ steps:
     target: /home/dionisio/services/config/swag/config/www
     source: public
     rm: true
+    strip_components: 1
