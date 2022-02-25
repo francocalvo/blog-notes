@@ -3,7 +3,7 @@ title: Dotfiles
 geekdocCollapseSection: true
 ---
 
-{{< hide >}}
+<div class="hidden">
 # Contents
 
 - [Descripción](#Descripción)
@@ -12,7 +12,7 @@ geekdocCollapseSection: true
   - [Por hacer](#Descripción#Por hacer)
   - [Recursos](#Descripción#Recursos)
 
-{{< /hide >}}
+</div>
 
 # Descripción
 

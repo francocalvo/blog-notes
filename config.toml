@@ -1,4 +1,4 @@
-baseURL = "http://localhost"
+baseURL = "https://francocalvo.ar"
 title = "Geekdocs"
 theme = "hugo-geekdoc"
 
