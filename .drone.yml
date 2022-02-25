@@ -9,6 +9,11 @@ steps:
   commands:
   - git submodule update --init
 
+- name: 
+  image: node:16.14.0-alpine3.15
+  commands:
+  - npm install
+
 - name: build
   image: plugins/hugo
   settings:
