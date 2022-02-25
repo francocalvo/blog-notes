@@ -32,5 +32,5 @@ steps:
     password:
       from_secret: ssh_password
     target: /home/dionisio/services/config/swag/config/www
-    source: ./public/*
+    source: public
     rm: true
