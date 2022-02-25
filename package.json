@@ -1,5 +1,5 @@
 {
  "scripts": {
-    "postinstall": "cd theme/hugo/geekdoc && npm install && npm run build"
+    "postinstall": "(cd themes/hugo-geekdoc && npm install && npm run build)"
   }
 }
