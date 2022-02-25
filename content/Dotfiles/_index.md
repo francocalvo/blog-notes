@@ -83,10 +83,12 @@ Los plugins utilizados en vim son:
 
 ## Por hacer
 
-* [ ] Lograr autosincronización o autopublicación.
-* [ ] Publicar archivos en GitHub. 
+
 * [ ] Renderizar imagenes desde vim. (ver este [plugin](https://github.com/ekickx/clipboard-image.nvim))
 * [ ] Pasar configuración de vimwiki a vimwiki.lua.
+* [ ] Optimizar pipeline de Drone.
+* [X] Lograr autosincronización o autopublicación.
+* [X] Publicar archivos en GitHub. 
 * [X] Crear un index por materia.
 * [X] Arreglar problema con Luasnip. ([#161 Luasnip](https://github.com/L3MON4D3/LuaSnip/issues/161))
 * [X] Agregar configuraciones a whichkey. 
