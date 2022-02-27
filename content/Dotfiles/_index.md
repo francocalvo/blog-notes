@@ -83,6 +83,7 @@ Los plugins utilizados en vim son:
 
 ## Por hacer
 
+[Proyecto Ansible](Proyecto-Ansible)
 
 * [ ] Renderizar imagenes desde vim. (ver este [plugin](https://github.com/ekickx/clipboard-image.nvim))
 * [ ] Pasar configuración de vimwiki a vimwiki.lua.
