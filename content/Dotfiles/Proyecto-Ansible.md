@@ -13,7 +13,7 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 
 ## Estructura
 
-### Ansible
+**Ansible**
 - [ ] Configurar test con Molecule.
 - [ ] Agregar secretos con Ansible Vault.
 - [ ] Agregar variables globales.
@@ -21,21 +21,21 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 
 ### Zeus
 
-#### Provisioning 
+**Provisioning**
 - [ ] Agregar configuración general de discos. ([ver](https://github.com/FuzzyMistborn/infra/tree/main/roles/adonalsium))
 - [ ] Configurar repositorios correspondientes de Proxmox.
 - [ ] Instalar configuración de Neovim.
 
-#### Configurar filesystem de VMs
+**Configurar filesystem de VMs**
 - [ ] Instalar y configurar MergerFS.
 - [ ] Instalar y configurar SnapRAID.
 - [ ] Instalar y configurar Kopia.
 - [ ] Instalar y configurar Samba.
 
-#### Conectividad
+**Conectividad**
 - [ ] Instalar y configurar Wiregurd.
 
-#### Automatización
+**Automatización**
 - [ ] Agregar cronjobs.
 - [ ] Instalar y configurar Ansible.
 
@@ -43,16 +43,16 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 
 ### Dionisio
 
-#### Provisioning
+**Provisioning**
 - [ ] Instalar configuración de Neovim.
 - [ ] Agregar Samba en red.
 
-#### Docker
+**Docker**
 - Instalar Docker.
 - Instalar docker-compose.
 - Configurar dumps y backups de bases de datos.
 
-#### Contenedores
+**Contenedores**
 - [ ] Authentik.
 - [ ] Duplicati.
 - [ ] Drone.
