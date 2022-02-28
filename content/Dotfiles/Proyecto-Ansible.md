@@ -15,9 +15,12 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 
 **Ansible**
 - [ ] Configurar test con Molecule.
-- [ ] Agregar secretos con Ansible Vault.
-- [ ] Agregar variables globales.
-- [ ] Configurar Drone.
+- [ ] Configurar Drone
+
+**Conectividad**
+- [ ] Configurar DNS de Cloudflare con Ansible.
+  - [ ] Para francocalvo.ar.
+  - [ ] Para fjc.ar.
 
 ### Zeus
 
@@ -45,36 +48,42 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 
 **Provisioning**
 - [ ] Instalar configuración de Neovim.
-- [ ] Agregar Samba en red.
+- [X] Agregar Samba en red.
 
 **Docker**
-- Instalar Docker.
-- Instalar docker-compose.
-- Configurar dumps y backups de bases de datos.
+- [X] Instalar Docker.
+- [X] Instalar docker-compose.
+- [ ] Configurar dumps y backups de bases de datos.
 
 **Contenedores**
 - [ ] Authentik.
+- [ ] Code-server.
 - [ ] Duplicati.
-- [ ] Drone.
-- [ ] Gitea.
-- [ ] Glances.
-- [ ] Haste-server.
+- [X] Drone.
+- [X] Gitea.
+- [X] Haste-server.
 - [ ] Jellyfin.
+- [ ] JFA.
 - [ ] Librespeed.
 - [ ] Nextcloud.
+- [ ] Minio.
 - [ ] Outline.
 - [ ] Paperless.
 - [ ] Photoprism.
-- [ ] Portainer.
+- [X] Portainer.
 - [ ] qBittorrent.
-- [ ] Redbot.
+- [X] Redbot.
 - [ ] Swag.
+  - [ ] Proxy configurations.
+  - [ ] Nginx configurations.
+  - [ ] Testing with Cloudflare.
+  - [ ] Wrap up configuration.
 - [ ] Syncthing.
-- [ ] Automation:
-  - [ ] Radarr.
-  - [ ] Sonarr.
-  - [ ] Bazarr.
-  - [ ] Prowlarr.
-  - [ ] Ombi.
-  - [ ] Unmanic.
+- [X] Automation:
+  - [X] Radarr.
+  - [X] Sonarr.
+  - [X] Bazarr.
+  - [X] Prowlarr.
+  - [X] Ombi.
+  - [X] Unmanic.
 
