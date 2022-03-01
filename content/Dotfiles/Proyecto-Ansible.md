@@ -19,7 +19,7 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 
 **Conectividad**
 - [ ] Configurar DNS de Cloudflare con Ansible.
-  - [ ] Para francocalvo.ar.
+  - [X] Para francocalvo.ar.
   - [ ] Para fjc.ar.
 
 ### Zeus
@@ -74,9 +74,9 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 - [ ] qBittorrent.
 - [X] Redbot.
 - [ ] Swag.
-  - [ ] Proxy configurations.
-  - [ ] Nginx configurations.
-  - [ ] Testing with Cloudflare.
+  - [X] Proxy configurations.
+  - [X] Nginx configurations.
+  - [X] Testing with Cloudflare.
   - [ ] Wrap up configuration.
 - [ ] Syncthing.
 - [X] Automation:
