@@ -19,7 +19,7 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 
 **Conectividad**
 - [ ] Configurar DNS de Cloudflare con Ansible.
-  - [X] Para francocalvo.ar.
+  - [ ] Para francocalvo.ar.
   - [ ] Para fjc.ar.
 
 ### Zeus
@@ -56,22 +56,23 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 - [ ] Configurar dumps y backups de bases de datos.
 
 **Contenedores**
-- [ ] Authentik.
-- [ ] Code-server.
-- [ ] Duplicati.
+- [ ] File/directory ownership
+- [X] Authentik.
+- [X] Code-server.
+- [X] Duplicati.
 - [X] Drone.
 - [X] Gitea.
 - [X] Haste-server.
-- [ ] Jellyfin.
-- [ ] JFA.
-- [ ] Librespeed.
+- [X] Jellyfin.
+- [X] JFA.
+- [X] Librespeed.
 - [ ] Nextcloud.
-- [ ] Minio.
-- [ ] Outline.
-- [ ] Paperless.
-- [ ] Photoprism.
+- [-] Minio.
+- [-] Outline.
+- [X] Paperless.
+- [X] Photoprism.
 - [X] Portainer.
-- [ ] qBittorrent.
+- [X] qBittorrent.
 - [X] Redbot.
 - [ ] Swag.
   - [X] Proxy configurations.
