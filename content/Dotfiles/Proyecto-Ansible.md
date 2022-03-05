@@ -18,9 +18,9 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 - [ ] Configurar Drone
 
 **Conectividad**
-- [ ] Configurar DNS de Cloudflare con Ansible.
-  - [ ] Para francocalvo.ar.
-  - [ ] Para fjc.ar.
+- [X] Configurar DNS de Cloudflare con Ansible.
+  - [X] Para francocalvo.ar.
+  - [X] Para fjc.ar.
 
 ### Zeus
 
@@ -56,7 +56,7 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 - [ ] Configurar dumps y backups de bases de datos.
 
 **Contenedores**
-- [ ] File/directory ownership
+- [X] File/directory ownership
 - [X] Authentik.
 - [X] Code-server.
 - [X] Duplicati.
@@ -68,18 +68,20 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 - [X] Librespeed.
 - [ ] Nextcloud.
 - [-] Minio.
-- [-] Outline.
+- [ ] Outline.
+  - [ ] Learn how to setup Authentik automatically.
+  - [ ] Learn how to create bucket for MinioLearn how to create bucket for Minio.
 - [X] Paperless.
 - [X] Photoprism.
 - [X] Portainer.
 - [X] qBittorrent.
 - [X] Redbot.
-- [ ] Swag.
+- [X] Swag.
   - [X] Proxy configurations.
   - [X] Nginx configurations.
   - [X] Testing with Cloudflare.
-  - [ ] Wrap up configuration.
-- [ ] Syncthing.
+  - [X] Wrap up configuration.
+- [X] Syncthing.
 - [X] Automation:
   - [X] Radarr.
   - [X] Sonarr.
