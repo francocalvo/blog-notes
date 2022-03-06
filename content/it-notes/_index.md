@@ -1,5 +1,9 @@
-# Courses
+---
+title: IT Courses & Notes
+geekdocCollapseSection: true
+---
 
-- Migrate notes from JS course.
+Here I'll add misc. notes about courses or books about IT related fields like Cybersecurity, Networking, Programming, etc.
 
-[CCNA Course](CCNA/_index.md)
+### to-do
+- Migrate notes on Javascript course.
