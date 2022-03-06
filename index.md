@@ -1,6 +1,7 @@
 # Personal
 [Dotfiles](content/Dotfiles/_index.md)
 [Proyecto Ansible](content/Dotfiles/Proyecto-Ansible.md)
+[CCNA](content/it-notes/CCNA/_index.md)
 
 # UNL
 ## Año 2022

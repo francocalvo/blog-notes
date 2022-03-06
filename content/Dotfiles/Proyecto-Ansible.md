@@ -67,10 +67,10 @@ El estado actual se podrá ver en el repositorio de Ansible en Gitea (replicado 
 - [X] JFA.
 - [X] Librespeed.
 - [ ] Nextcloud.
-- [-] Minio.
+- [ ] Minio.
 - [ ] Outline.
-  - [ ] Learn how to setup Authentik automatically.
-  - [ ] Learn how to create bucket for MinioLearn how to create bucket for Minio.
+  - [ ] Aprender como agregar Authentik automaticamente.
+  - [ ] Aprender como crear bucket automaticamente.
 - [X] Paperless.
 - [X] Photoprism.
 - [X] Portainer.
