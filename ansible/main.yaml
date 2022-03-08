@@ -1,0 +1,22 @@
+--- 
+- name: "Add MathJax support to Geekdocs"
+  hosts: localhost
+  connection: local 
+  tasks:
+    - name: Install HTML file for MathJax
+      copy:
+        src: templates/mathjax_support.html
+        dest: ../themes/hugo-geekdoc/layouts/partials
+        force: true
+
+    - name: Install custom HTML head.
+      copy:
+        src: templates/custom.html
+        dest: ../themes/hugo-geekdoc/layouts/partials/head
+        force: true
+
+    - name: Install custom CSS to add MathJax.
+      copy:
+        src: templates/custom.css
+        dest: ../themes/hugo-geekdoc/static
+        force: true
