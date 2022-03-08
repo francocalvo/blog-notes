@@ -9,11 +9,16 @@ steps:
   commands:
   - git submodule update --init
 
-- name: install theme
+- name: install geekdocs theme
   pull: always
   image: node:16.14.0-alpine3.15
   commands:
   - npm install
+
+- name: install mathjax support
+  image: plugins/ansible:1
+  settings:
+    playbook: ansible/main.yaml
 
 - name: build
   image: plugins/hugo
@@ -23,7 +28,7 @@ steps:
     url: https://francocalvo.ar
     validate: true
 
-- name: scp files
+- name: deploy
   image: appleboy/drone-scp
   settings:
     host: 192.168.0.68
