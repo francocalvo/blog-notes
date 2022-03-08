@@ -19,6 +19,7 @@ steps:
   image: plugins/ansible:1
   settings:
     playbook: ansible/main.yaml
+    inventory: ansible/inventory
 
 - name: build
   image: plugins/hugo
