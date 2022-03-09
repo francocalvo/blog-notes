@@ -96,7 +96,8 @@ through a router.
 ### Host portion
 
 The host portion of the address is available to be allocated to the different
-hosts on the subnet, except for two cases. Also, the host portion must be unique on the subnet.
+hosts on the subnet, except for two cases. Also, the host portion must be
+unique on the subnet.
 
 The exception are:
 - All 0 in the host portion designates the network address, and is not allowed.
@@ -107,7 +108,9 @@ This means we can have 253 different devices per subnet, from 1 to 254.
 
 ### Slash notation
 
-Because the subnet mask always begins with contiguous `1`, it will be a 1 to 32 bits long counting from left to right. This allows us to write the subnet mask in slash notation, which is more convenient.
+Because the subnet mask always begins with contiguous `1`, it will be a 1 to 32
+bits long counting from left to right. This allows us to write the subnet mask
+in slash notation, which is more convenient.
 
 For example, for the previous example, we could write it is like:
 `192.168.10.15/24`, as we subtract 8 bit for the host address.

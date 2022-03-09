@@ -1,0 +1,118 @@
+# Table of contents
+<div class='hidden'>
+# Contents
+
+- [Table of contents](#Table of contents)
+- [Classless Inter-Domain Routing (CIDR)](#Classless Inter-Domain Routing (CIDR))
+- [Subnetting](#Subnetting)
+    - [`ip subnet-zero`](#Subnetting#`ip subnet-zero`)
+    - [Class C/31 subnet](#Subnetting#Class C/31 subnet)
+    - [Class C/30 subnet](#Subnetting#Class C/30 subnet)
+    - [Class C/29 subnet](#Subnetting#Class C/29 subnet)
+  - [Subnetting practice](#Subnetting#Subnetting practice)
+- [Variable length subnet mask (VLSM)](#Variable length subnet mask (VLSM))
+  - [VLSM Example](#Variable length subnet mask (VLSM)#VLSM Example)
+
+</div>
+{{<toc>}}
+
+
+# Classless Inter-Domain Routing (CIDR)
+
+- A problem with classful addresses was that if a company had more than 254
+  hosts they would need to be assigned a Class B network.
+- They would have much less than the 65534 hosts allocated, so this was a huge
+  amount of the global address space being wasted.
+
+CIDR removed the fixed `/8`, `/16` and `/24` requirements for the address
+classes, and allowed them to be split into smaller networks, like
+`175.10.0.0/20` . This alsow restricts issues to the local part of the network
+and reduces CPU load.
+
+
+# Subnetting
+
+Let's say that you work for a company with 4 departments in two different
+offices. You could buy four different Class C IP ranges, or buy a single one
+and subnet it.
+
+To subnet the network into smaller subnets, we need to "borrow" host bits and
+add them to the network portion of the address, moving the network address line
+to the right.
+
+Let's say we've been allocated Class C `200.15.10.0/24`. To calculate the
+number of available subnets, the formula is $2^{subnet-bits}$. On the other
+hand, to get the number of available hosts we need to make $2^{host-bits}-2$.
+We subtract 2 because the network address and broadcast address cannot be
+assigned to hosts.
+
+### `ip subnet-zero`
+
+As we subtract 2 bits from the host address, we used to subtract two from the
+network address. This wasn't really practical and is not done anymore. In CISCO
+routers, the command `ip subnet-zero` overrides this behavior and is enabled by
+default.
+
+### Class C/31 subnet
+
+Following the same example, we'll use a submask of `/31`, which is the max you
+can use. This borrows 7 bits out of 8, and gives us 128 subnets with 2 hosts
+each. This breaks the breaks the standard rules for IP addressing, but it's
+supported for point to point link, which don't need a broadcast address. 
+
+### Class C/30 subnet
+
+We now use a `/30`  subnet mask, or `255.255.255.252`. This let's us have 2
+bits per ahost address, meaning: $2^2-2=2$. It borrows 6 bits for the network
+address, meaning we got $2^6=64$.
+
+We see that the `/31` is useful if you need to maximise use of your address
+space, but `/30` is more standard and used.
+
+### Class C/29 subnet
+
+With this setup we get $2^3-2=6$ for the hosts, and $2^5=32$ for the network
+address. This means that valid host addresses are going to be:
+
+- `200.15.10.1` to `200.15.10.6`  (0 for network and 7 for broadcast). 
+- `200.15.10.9` to `200.15.10.14`  (8 for network and 15 for broadcast). 
+
+## Subnetting practice
+
+1. What are the network address, broadcast address, and valid host addresses
+   for the IP address `192.22.45.173/26`?
+2. What's the subnet mask in the dotted decimal notation?
+
+The number of host bits is six, so we got $2^6 -2=62$ host addresses. Going
+from 0, we got:
+- `.1` to `.62`  (`.0` network and `.63` broadcast).
+- `.65` to `.126`  (`.64` network and `.127` broadcast).
+- `.129` to `.190`  (`.128` network and `.191` broadcast).
+
+The subnet mask borrowed the last two bits in the last octet, so we got:
+$128+64=192$. Then, the submask is `255.255.255.192`.
+
+# Variable length subnet mask (VLSM)
+
+Early routing protocols only supported fixed length subnet masking, where all
+subnets had to be the same size. Now, you can have subnets of different sizes
+according to how many hosts you have.
+
+**Subnetting considerations:** 
+- How many locations do we have in the network?
+- How many hosts are in each location?
+- What are the IP addressing requirements for each location?
+- What size is appropriate for each subnet?
+
+For designing the subnettings, you first find the largest segment and allocate
+a suitable subnet size for it and the start of the address space, then rinse
+and repeat.
+
+## VLSM Example
+
+Let's say we got an office in New York with two departments: Engineering, with
+28 hosts, and Sales with 14. Then we got Boston with other two departments:
+Engineering with 28 hosts, and Sales with 7.
+Design the subnets for this setting.
+
+
