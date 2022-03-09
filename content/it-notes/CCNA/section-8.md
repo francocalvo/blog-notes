@@ -20,6 +20,9 @@
     - [Example 2](#Variable length subnet mask or VLSM#VLSM Class A#Example 2)
     - [Example 3](#Variable length subnet mask or VLSM#VLSM Class A#Example 3)
   - [Subnetting question categories](#Variable length subnet mask or VLSM#Subnetting question categories)
+- [Private addresses](#Private addresses)
+- [IPv6](#IPv6)
+- [Extra Resources](#Extra Resources)
 
 </div>
 {{<toc>}}
@@ -34,7 +37,7 @@
 
 CIDR removed the fixed `/8`, `/16` and `/24` requirements for the address
 classes, and allowed them to be split into smaller networks, like
-`175.10.0.0/20` . This alsow restricts issues to the local part of the network
+`175.10.0.0/20` . This also restricts issues to the local part of the network
 and reduces CPU load.
 
 
@@ -114,8 +117,8 @@ according to how many hosts you have.
 - What are the IP addressing requirements for each location?
 - What size is appropriate for each subnet?
 
-For designing the subnettings, you first find the largest segment and allocate
-a suitable subnet size for it and the start of the address space, then rinse
+For designing the subnets, you first find the largest segment and allocate a
+suitable subnet size for it and the start of the address space, then rinse
 and repeat.
 
 ## VLSM Class C Example
@@ -138,7 +141,7 @@ $$
 \text{hosts }= 2^5 - 2 = 30
 $$
 
-We'll get these subnets for both Eng Depts:
+We'll get these subnets for both Eng. Dept.:
 
 - `.1` to `.30` (`.0` and `.31` reserved) for NY Eng Dept.
 - `.33` to `.62` (`.32` and `.63` reserved) for Boston Eng Dept.
@@ -252,3 +255,36 @@ addresses per network. Then:
   subnet?
 - Given a particular IP address and subnet mask, calculate the subnet's network
   address, the broadcast address and range of valid host IP addresses.
+
+# Private addresses
+
+These were added in the RFC 1918 (request for comments), which specifies
+private IP address ranges which are not routable on the public internet.
+
+These addresses were originally designed for hosts which should have no
+internet connectivity. The range are:
+
+- `10.0.0.0 - 10.255.255.255` or `10.0.0.0/8`.
+- `172.16.0.0 - 172.31.255.255`  or `172.16.0.0/12`.
+- `192.168.0.0-192.168.255.255`  or `192.168.0.0/16`.
+
+# IPv6
+
+This was the answer in the 90's when the Internet authorities started to
+predict an address exhaustion. It uses a 128 bit address, compared to the IPv4
+32 bit address. This allows to provide more than $7.9*10^{28}$ times as many
+addresses as IPv4.
+
+The main problem is that there is not a seamless migration from IPv4 to IPv6,
+so the companies implemented NAT (network address translation) was implemented
+as a workaround, where an organization can use private IP address on their
+inside network, but still grant their hosts internet access by translating them
+to their outside public IP address, meaning many hosts on the inside can share
+a few or even a single IP public address.
+
+# Extra Resources
+
+You can check for more subnetting problems in:
+
+- [Subnetting Questions](www.subnettingquestions.com)
+- [Subnetting](www.subnetting.org)
