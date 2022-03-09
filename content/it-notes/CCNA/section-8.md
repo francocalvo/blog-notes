@@ -195,6 +195,7 @@ We can see that the IP address for that range is going to be starting from
 
 We see that we need at least 3 bits, so knowing a Class B has as default `/16`, 
 I'd use `/19`.
+
 ---
 
 ## VLSM Class A
