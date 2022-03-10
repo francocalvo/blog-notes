@@ -11,3 +11,7 @@ geekdocCollapseSection: true
 - [Section 6: Intro to the Network Layer](section-6)
 - [Section 7: IP Addresses Classes](section-7)
 - [Section 8: Subnetting](section-8)
+- [Section 9: Intro to the Data-link Layer](section-9)
+- [Section 10: Intro to the Physical Layer](section-10)
+- [Section 11: Cisco Device Functions](section-11)
+- [Section 12: The life of a packet](section-12)
