@@ -10,6 +10,12 @@
 [Ingeniería en software I](./content/ingenieria-informatica/ingenieria-software-i/_index.md)
 [Teoría de la computación](./content/ingenieria-informatica/teoria-computacion-i/_index.md)
 
+# UTN
+## Año 2022
+### Primer cuatrimestre
+[Tránsito y tansporte](./content/ingenieria-civil/transito/_index.md)
+[Puertos y vías navegables](./content/ingenieria-civil/vias-navegables)
+
 ### Otros
 [Default materia](Default-materia)
 
