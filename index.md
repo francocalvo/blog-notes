@@ -2,6 +2,8 @@
 [Dotfiles](content/Dotfiles/_index.md)
 [Proyecto Ansible](content/Dotfiles/Proyecto-Ansible.md)
 [CCNA](content/it-notes/CCNA/_index.md)
+[AWS DVA-C01](content/it-notes/AWS/_index.md)
+
 
 # UNL
 ## Año 2022
@@ -14,7 +16,7 @@
 ## Año 2022
 ### Primer cuatrimestre
 [Tránsito y tansporte](./content/ingenieria-civil/transito/_index.md)
-[Puertos y vías navegables](./content/ingenieria-civil/vias-navegables)
+[Puertos y vías navegables](./content/ingenieria-civil/vias-navegables/_index.md)
 
 ### Otros
 [Default materia](Default-materia)

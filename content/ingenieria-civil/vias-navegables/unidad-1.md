@@ -147,4 +147,25 @@ Algunos puntos importantes son:
 
 # Esclusas
 
-%% Seguir desde diapositiva 16
+Las esclusas permiten la construcción de canales a diferentes niveles de agua o
+para salvar desniveles, efectivamente funcionando como un comunicador entre los
+distintos niveles de agua. Estas poseen un cuenco cerrado por una serie de
+compuertas, y una sección del canal cerrada por las mismas, y el nivel de agua
+aumenta o disminuye en función al uso de válvulas o aliviaderos.
+
+Las compuertas pueden ser de doble hoja, formando un diedro, lo que permite que
+la misma presión las ayude a mantenerse cerradas.
+
+Los requisitos que tienen son:
+- La esclusa debe llenarse lo más rápido posible para no alterar el tráfico.
+- El llenado no debe ser tan rápido que pueda generar esfuerzos peligrosos en
+  los cables de las embarcaciones.
+
+Desde el punto de vita del diseño, es importante tener en cuenta:
+- Dimensionamiento geométrico en función del buque de diseño.
+- Ubicación planialtrimétrica en el cuerpo de la presa o canal.
+- Diseño del sistema hidráulico de llenado y vaciado.
+- Cálculo estructural.
+- Sección del tipo y cálculo mecánico.
+
+En argentina está la esclusa de Yacaretá, que permite salvar 24m de diferencia.
