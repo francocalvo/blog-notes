@@ -5,6 +5,7 @@
 - [Table of contents](#Table of contents)
   - [Serverless](#Table of contents#Serverless)
 - [Lambda](#Lambda)
+- [TODO: Complete section](#TODO: Complete section)
 
 </div>
 {{<toc>}}
@@ -25,4 +26,8 @@ and Ruby. It also has a runtime API that's community supported and allows the
 use of other languages like Rust. It also has some Lambda Container Images,
 which need to implement the Lambda Runtime API, with ECS/Fargate as preferred.
 
+For example, a good use would be a CRON job, that would waste a lot of
+resources while it's doing nothing. You could use a *CloudWatch EventBridge* to
+trigger an AWS Lambda Function every our to perform a task.
 
+# TODO: Complete section

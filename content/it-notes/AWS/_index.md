@@ -8,6 +8,8 @@ geekdocCollapseSection: true
 4. [IAM Intro](section-4)
 5. [EC2 Fundamentals](section-5)
 
+8. [AWS Fundamentals: RDS + Aurora + ElastiCache](section-8)
+
 18. [CloudFormation](CloudFormation)
 
 21. [AWS Serverless: Lambda](section-21)
