@@ -15,10 +15,10 @@ Juan Pablo.
 
 Las clases son:
 
-- Martes de 2:00 a 4:00 de Práctica.
-- Miércoles de 2:00 a 4:00 de Teoría.
-- Jueves de 12:00 a 2:00 de Teoría. (Virtual)
-- Jueves de 2:00 a 4:00 de Práctica. (Virtual) <3
+- Martes de 14:00 a 16:00 de Práctica.
+- Miércoles de 14:00 a 16:00 de Teoría.
+- Jueves de 13:00 a 15:00 de Teoría. (Virtual)
+- Jueves de 14:00 a 16:00 de Práctica. (Virtual) <3
 
 ## Aprobación
 
@@ -32,7 +32,9 @@ ni ejercicios ni demostraciones, sino conceptos.
 ### Fechas examenes
 
 - Primer parcial: 30/04/2022
+- Recuperatorio: 28/05/2022
 - Segundo parcial: 
+- Coloquio final: 08/0/2022
 
 ## Bibliografía
 
@@ -40,8 +42,8 @@ El libro a usar es:
 
 - Matemática Discreta y sus aplicaciones Ed. 5 - Rosen.
 - Material propio: Notas de Práctica - VV.AA.
+- Material propio: Notas de Teoría - VV.AA.
 
 ## Apuntes por unidad
 
 - [Unidad 1: Lógica](unidad-1)
-
