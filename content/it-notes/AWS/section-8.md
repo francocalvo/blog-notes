@@ -9,9 +9,14 @@
   - [RDS Read Replicas](#AWS RDS Overview#RDS Read Replicas)
     - [Use cases](#AWS RDS Overview#RDS Read Replicas#Use cases)
   - [RDS Multi AZ](#AWS RDS Overview#RDS Multi AZ)
+  - [RDS Security - Encryption](#AWS RDS Overview#RDS Security - Encryption)
+    - [Snapshots](#AWS RDS Overview#RDS Security - Encryption#Snapshots)
+    - [Network & IAM](#AWS RDS Overview#RDS Security - Encryption#Network & IAM)
 
 </div>
 {{<toc>}}
+
+**Source:** [AWS Glue Tutorial for Beginners](https://www.youtube.com/watch?v=dQnRP6X8QAU)
 
 # AWS RDS Overview
 
@@ -83,3 +88,40 @@ automatic failover to the second RDS. This will increase availability.
 
 This is a zero downtime operation, and you just need to click on "modify" for
 the database and enable Multi-AZ.
+
+## RDS Security - Encryption
+
+RDS has **at reast encryption**, allowing:
+- Possibility to encrypt the master & replicas with AWS KMS AES 256 encryption.
+- Encryption has to be defined at launch time.
+- If the master is not encrypted, the replicas can't be either.
+- Transparent Data Encryption (TDE) available for SQL and Oracle.
+
+It also has **in-flight encryption**, this is:
+- SSL certs encrypt data to RDS in flight.
+- Provide SSL options with trust certs when connecting to database.
+- To enforce SSL, you need to do additional configs depending on the DB.
+
+### Snapshots
+To encrypt snapshots from a un-encrypted RDS, you can:
+- Create a snapshot of the un-encrypted database.
+- Copy the snapshot and enable encryption for the snapshot.
+- Restore the database from the encrypted snapshot.
+- Migrate apps to the new database and delete the old one.
+
+### Network & IAM
+
+About Network Security:
+- RDS are usually deployed within a private subnet, not a public one.
+- RDS security works by leveraging **security groups**, controlling which
+  IP/sec group can communicate with RDS.
+
+About Access Management:
+- IAM policies help control who can manage AWS RDS.
+- Traditional Username and Password can be used to login into the DB.
+- IAM based auth can be used to login into RDS MySQL & PostgreSQL.
+
+For IAM Auth, you would an authentication token obtained through IAM&RDS API
+calls, where the auth token has a lifetime of 15 minutes.
+
+%% TODO: Finish Aurora part.
