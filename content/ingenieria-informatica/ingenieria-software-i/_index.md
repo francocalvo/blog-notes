@@ -20,7 +20,8 @@ geekdocCollapseSection: true
 
 Profesores:
 
-- Gervasio Mendez.
+- Eduardo Mendez.
+- Gabriel Mautino
 
 ## Virtualidad
 
@@ -45,3 +46,5 @@ Para la promoción se requiere un promedio de 70% en los parciales, con ninguno
 menor a 50%, una asistencia de 80% y un coloquio.
 
 # Unidades
+
+1. [Sistemas de información](unidad-1)

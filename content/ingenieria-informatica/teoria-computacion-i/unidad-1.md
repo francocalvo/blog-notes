@@ -6,7 +6,7 @@
 - [Lógica y razonamiento matemático](#Lógica y razonamiento matemático)
 - [Proposiciones](#Proposiciones)
     - [Resumen de operadores](#Proposiciones#Resumen de operadores)
-  - [Tautología](#Proposiciones#Tautología)
+  - [Tautología, contradicción y contingencia](#Proposiciones#Tautología, contradicción y contingencia)
 - [Implicación](#Implicación)
     - [Implicación simple](#Implicación#Implicación simple)
     - [Implicación Reciproca](#Implicación#Implicación Reciproca)
@@ -14,6 +14,10 @@
     - [Implicación Inversa](#Implicación#Implicación Inversa)
     - [Doble implicación](#Implicación#Doble implicación)
   - [Precedencia](#Implicación#Precedencia)
+- [Predicados y cuantificadores](#Predicados y cuantificadores)
+  - [Cuantificador existencial](#Predicados y cuantificadores#Cuantificador existencial)
+  - [Cuantificador universal](#Predicados y cuantificadores#Cuantificador universal)
+  - [Cuantificador anidado](#Predicados y cuantificadores#Cuantificador anidado)
 
 </div>
 {{<toc>}}
@@ -24,9 +28,16 @@
 Las proposiciones que vamos a usar son e letra minúscula, normalmente se usan 
 $p$, $q$, $r$, $s$, $t$, $u$ y $v$.
 
-Las proposiciones son afirmaciones, o aserciones definitivas, donde se declaran
-un hecho o suceso, donde la respuesta sobre su veracidad, que puede ser tanto
-falso o verdadero. 
+Una **preposición**  es toda enunciado que sea verdadero o falso, pero no
+ambas a la vez.
+
+En palabras propias, sería: las proposiciones son afirmaciones, o aserciones
+definitivas, donde se declaran un hecho o suceso, donde la respuesta sobre su
+veracidad, que puede ser tanto falso o verdadero. 
+
+También tenmos la **Tabla de Verdad**, que presenta el resultado de una
+proposición compuesta, a partir de todas las combinaciones posibles de los
+valores de las proposiciones que lo componen.
 
 Por ejemplo, podemos, si decimos, "Hoy es Falso", sabemos que
 $p \equiv F$.
@@ -82,11 +93,16 @@ $$
 
 * La implicación **no** es un operador lógico.
 
-## Tautología 
+## Tautología, contradicción y contingencia
 
 Es una composición de proposiciones que siempre es igual, tal como: 
 - $p \land \neg p$ siempre va a ser Falso.
 - $\neg q \lor q$ siempre va a ser Verdadero.
+
+Luego, similarmente, si tenemos una proposición compuesta que siempre es falsa,
+no importando los VV de sus proposiciones componentes, se denomina
+**contradicción**. Y últimamente, si tenemos un caso donde se dan los dos, es
+una **contingencia**.
 
 ---
 
@@ -177,4 +193,36 @@ $(p \lor q) \land (\neg r)$. Pero, luego, la precedencia es:
 3. Disyunción.
 4. Implicación.
 5. Doble implicación.
+
+# Predicados y cuantificadores
+
+- Sea P(x) un enunciado que incluye a la variable $x \in D$, se denomina
+  Función Proposional, o predicado, al enunciado $P$ si, para cada valor 
+  $x \in D$, se tiene que $P(x)$ es una proposición.
+- Se denomina Dominio de Discurso (DD) al conjunto $D$ del enunciado $P$.
+
+TODO: Completar
+
+## Cuantificador existencial
+
+La *cuantificación existencial* de la función proporcional $P$ con dominio de
+discurso $D$, es la proposición: $P(x)$ es verdadera para **al menos un** valor
+$v$ en el DD. Se nota como: $\exists x, P(x)$, donde $\exists$ es el 
+**cuantificador existencial**.
+
+## Cuantificador universal
+
+La cuantificación universal de la función proporcional $P$ con $DD$ es la
+proposición: $P(X)$ es verdadera para todos los valores $x$ en el $DD$. Se
+denota como $\forall x, P(x)$.
+
+
+## Cuantificador anidado
+
+Ver ejemplo del apunte. En resumen:
+
+- $\exists x \exists y P(x,y)  \equiv \exists y \exists x P(x,y)$: Conmutan.
+- $\forall x \forall y P(x,y)  \equiv \forall y \forall x P(x,y)$: Conmutan.
+- $\forall x \exists y P(x,y)  \neq \exists y \forall x P(x,y)$: No conmutan.
+
 
