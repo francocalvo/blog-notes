@@ -22,6 +22,7 @@
   - [StackSets](#Others#StackSets)
 - [CloudFormation Drift](#CloudFormation Drift)
 - [Example](#Example)
+- [Extra course in CloudFormation](#Extra course in CloudFormation)
 
 </div>
 {{<toc>}}
@@ -31,9 +32,6 @@
 - [Docs on ApiGateway::RestApi](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html)
 
 
-
-
-Cloudformation is a tool that allows us to have Infrastructure as Code. It
 works like:
 
 - Templates have to be uploaded in S3 and then referenced in CloudFormation.
@@ -320,3 +318,16 @@ Resources:
         ToPort: 22
         CidrIp: 192.168.1.1/32
 ```
+
+---
+
+# Extra course in CloudFormation
+
+5. [CloudFormation Parameters](CloudFormation-5)
+6. [CloudFormation Resources](cloudformation-6)
+7. [CloudFormation Mappings](cloudformation-7)
+8. [CloudFormation Outputs](cloudformation-8)
+9. [CloudFormation Conditions](cloudformation-9)
+
+
+10. [Nested Stacks](cloudformation-14)
