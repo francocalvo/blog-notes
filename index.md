@@ -2,6 +2,7 @@
 [Dotfiles](content/Dotfiles/_index.md)
 [Proyecto Ansible](content/Dotfiles/Proyecto-Ansible.md)
 [CCNA](content/it-notes/CCNA/_index.md)
+[SQL](content/it-notes/SQL/_index.md)
 [AWS DVA-C01](content/it-notes/AWS/_index.md)
 
 
