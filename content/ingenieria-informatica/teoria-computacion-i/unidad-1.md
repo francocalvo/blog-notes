@@ -18,6 +18,12 @@
   - [Cuantificador existencial](#Predicados y cuantificadores#Cuantificador existencial)
   - [Cuantificador universal](#Predicados y cuantificadores#Cuantificador universal)
   - [Cuantificador anidado](#Predicados y cuantificadores#Cuantificador anidado)
+- [Método de Demostración](#Método de Demostración)
+  - [Terminología](#Método de Demostración#Terminología)
+  - [Razonamientos válidos](#Método de Demostración#Razonamientos válidos)
+  - [Métodos de demostración](#Método de Demostración#Métodos de demostración)
+    - [Ejemplo](#Método de Demostración#Métodos de demostración#Ejemplo)
+- [Conjuntos](#Conjuntos)
 
 </div>
 {{<toc>}}
@@ -225,4 +231,93 @@ Ver ejemplo del apunte. En resumen:
 - $\forall x \forall y P(x,y)  \equiv \forall y \forall x P(x,y)$: Conmutan.
 - $\forall x \exists y P(x,y)  \neq \exists y \forall x P(x,y)$: No conmutan.
 
+# Método de Demostración
 
+## Terminología
+
+- **Axioma:** es una suposición no demostrable y que se supone verdadera.
+- **Definición:** es una oración declarativa que describe con precisión el
+  significado y alcance de un término.
+- **Demostración:** es una serie de proposiciones conexas que definen un
+  razonamiento. Se usan para construir nuevas proposiciones a partir de las ya
+  dadas, donde las últimas pueden ser axiomas o lemas.
+- **Reglas de inferencia:** son proposiciones compuestas tautológicas.
+- **Teorema:** es un enunciado escrito como una implicación que se demuestra
+  como verdadero usando una demostración.
+- **Lema:** teorema auxiliar o de menor alcance, que se usa para demostrar un
+  teorema más importante.
+- **Corolario:** una consecuencia de un teorema ya demostrado.
+- **Falacia:** es una forma de razonamiento incorrecta.
+- **Paradoja:** es una inconsistencia lógica. 
+- **Conjetura:** es una proposición cuyo valor de verdad es desconocido.
+
+
+## Razonamientos válidos
+
+Un **razonamiento** (o argumento) es una implicación formada por $n$
+proposiciones de la forma:
+
+$$
+(p_1 \land p_2 \land ... \land p_n) \implies q
+$$
+
+Se dice que un razonamiento es *valido si siempre que TODAS las premisas son*
+*$T$, la conclusión también lo es*. Esto nos permite decir que podemos demostrar
+que la conclusión $q$ se deduce lógicamente de las premisas $p_1, p_2, ... p_n$.
+
+Una forma para chequear un razonamiento válido es armar una tabla de verdad, y 
+mirar *únicamente* las filas en donde toas las premisas son T, y chequear que
+*siempre* se tiene una una conclusión $q$ T.
+
+## Métodos de demostración
+
+Existen varias formas de demostración, por ejemplo:
+
+- **Demostración directa:** la implicación $p \implies q$se puede probar
+  comprobando si $p$ es T, entonces $q$ también lo es.
+- **Demostración indirecta:** como la implicación $p \implies q$ se puede
+  probar demostrando que su contra-positiva (o contra-recíproca) es T.
+- **Demostración vacua:** cuando $p$, que es la premisa, es siempre F, por lo
+  tanto la implicación será siempre será verdadera.
+- **Demostración trivial:** cuando $q$ siempre es T, entonces la implicación
+  siempre será T, porque cuando $p$ es F, la implicación es T, y cuando es T,
+  la implicación también lo es.
+- **Demostración por reducción al absurdo.** 
+- **Demostración por resolución.**
+
+
+### Ejemplo
+
+Los únicos enteros consecutivos no negativos $a$, $b$ y $c$ que satisfacen la
+siguiente ecuación son 3, 4 y 5:
+
+$$
+a^2 + b^2 = c^2 
+$$
+
+
+# Conjuntos
+
+Los conjuntos se emplean para agrupar *cosas* que tienen propiedades parecidas. 
+Una definición más formal sería:
+
+> Es una colección de *elementos*, en donde se admite la presencia de elementos
+>  repetidos y no necesariamente ordenados. Un *elemento* es cualquier entidad 
+> cuya naturaleza interna no interesa y puede ser cualquiera.
+
+Se dice que cada elemento **pertenece** al conjunto, y que un conjunto
+**contiene** a sus elementos.
+
+Algunos conjuntos especiales son el conjunto universal *U* o el conjunto vacío
+*V*. Luego podemos definir los conjuntos por tres formas:
+
+- **Extensión:** se enumeran todos los elementos del conjunto, colocándolo
+  entre un par de llaves. Notación: ${x_1, x_2, \cdots x_n}$. 
+- **Comprensión:** se caracteriza por una propiedad de los elementos. Por
+  ejemplo: ${x | x \in \N}$.
+- **Diagrama de Venn:** es una representación gráfica en donde se representa el
+  conjunto universal y dentro de él figuras cuasi-circulares ubicadas dentro
+  del universal.
+
+Se puede decir que dos conjuntos tienen **igualdad** si y sólo si tienen los
+mismos elementos.
