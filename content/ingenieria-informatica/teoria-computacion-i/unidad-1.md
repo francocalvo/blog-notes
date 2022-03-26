@@ -4,16 +4,17 @@
 
 - [Table of contents](#Table of contents)
 - [Lógica y razonamiento matemático](#Lógica y razonamiento matemático)
-- [Proposiciones](#Proposiciones)
-    - [Resumen de operadores](#Proposiciones#Resumen de operadores)
-  - [Tautología, contradicción y contingencia](#Proposiciones#Tautología, contradicción y contingencia)
-- [Implicación](#Implicación)
-    - [Implicación simple](#Implicación#Implicación simple)
-    - [Implicación Reciproca](#Implicación#Implicación Reciproca)
-    - [Implicación Contrareciproca](#Implicación#Implicación Contrareciproca)
-    - [Implicación Inversa](#Implicación#Implicación Inversa)
-    - [Doble implicación](#Implicación#Doble implicación)
-  - [Precedencia](#Implicación#Precedencia)
+  - [Proposiciones](#Lógica y razonamiento matemático#Proposiciones)
+    - [Resumen de operadores](#Lógica y razonamiento matemático#Proposiciones#Resumen de operadores)
+  - [Tautología, contradicción y contingencia](#Lógica y razonamiento matemático#Tautología, contradicción y contingencia)
+  - [Implicación](#Lógica y razonamiento matemático#Implicación)
+    - [Implicación simple](#Lógica y razonamiento matemático#Implicación#Implicación simple)
+    - [Implicación Reciproca](#Lógica y razonamiento matemático#Implicación#Implicación Reciproca)
+    - [Implicación Contrareciproca](#Lógica y razonamiento matemático#Implicación#Implicación Contrareciproca)
+    - [Implicación Inversa](#Lógica y razonamiento matemático#Implicación#Implicación Inversa)
+    - [Doble implicación](#Lógica y razonamiento matemático#Implicación#Doble implicación)
+  - [Precedencia](#Lógica y razonamiento matemático#Precedencia)
+- [Equivalencias lógicas](#Equivalencias lógicas)
 - [Predicados y cuantificadores](#Predicados y cuantificadores)
   - [Cuantificador existencial](#Predicados y cuantificadores#Cuantificador existencial)
   - [Cuantificador universal](#Predicados y cuantificadores#Cuantificador universal)
@@ -30,7 +31,7 @@
 
 # Lógica y razonamiento matemático
 
-# Proposiciones
+## Proposiciones
 Las proposiciones que vamos a usar son e letra minúscula, normalmente se usan 
 $p$, $q$, $r$, $s$, $t$, $u$ y $v$.
 
@@ -112,7 +113,7 @@ una **contingencia**.
 
 ---
 
-# Implicación
+## Implicación
 
 Dentro de la implicación, podemos tener otros casos, tales como:
 
@@ -187,8 +188,11 @@ $$
 - si $p$ entonces $q$ y recíprocamente.
 - $p$ ssi (iff) $q$.
 
-Tendremos una **equivalencia lógica** cuando $p \iff q$ es una tautología, es
-decir, $p \equiv q$.
+Esto siempre tiene los mismos VV que:
+
+$$
+(p \implies q) \land (q \implies p)
+$$
 
 ## Precedencia
 
@@ -199,6 +203,12 @@ $(p \lor q) \land (\neg r)$. Pero, luego, la precedencia es:
 3. Disyunción.
 4. Implicación.
 5. Doble implicación.
+
+# Equivalencias lógicas
+
+Tendremos una **equivalencia lógica** cuando $p \iff q$ es una tautología, es
+decir, $p \equiv q$. Es importante entender que $\equiv$ no es un conectivo
+lógico.
 
 # Predicados y cuantificadores
 
