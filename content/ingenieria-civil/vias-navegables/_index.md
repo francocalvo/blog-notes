@@ -8,6 +8,7 @@ geekdocCollapseSection: true
 - [Unidad 1: El transporte por agua y las vías navegables](unidad-1)
 - [Unidad 2: Los puertos](unidad-2)
 - [Unidad 3: Las embarcaciones](unidad-3)
+- [Unidad 4: Levantamientos hidrográficos](unidad-4)
 
 # Presentaciones
 

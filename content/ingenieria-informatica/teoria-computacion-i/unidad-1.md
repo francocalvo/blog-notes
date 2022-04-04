@@ -3,43 +3,51 @@
 # Contents
 
 - [Table of contents](#Table of contents)
-- [Lógica y demostraciones](#Lógica y demostraciones)
-  - [Lógica proposicional](#Lógica y demostraciones#Lógica proposicional)
-    - [Resumen de operadores](#Lógica y demostraciones#Lógica proposicional#Resumen de operadores)
-  - [Precedencia](#Lógica y demostraciones#Precedencia)
-  - [Tautología, contradicción y contingencia](#Lógica y demostraciones#Tautología, contradicción y contingencia)
-- [Equivalencias lógicas](#Equivalencias lógicas)
-  - [Implicación](#Equivalencias lógicas#Implicación)
-    - [Implicación simple](#Equivalencias lógicas#Implicación#Implicación simple)
-    - [Implicación Reciproca](#Equivalencias lógicas#Implicación#Implicación Reciproca)
-    - [Implicación Contrareciproca](#Equivalencias lógicas#Implicación#Implicación Contrareciproca)
-    - [Implicación Inversa](#Equivalencias lógicas#Implicación#Implicación Inversa)
-    - [Doble implicación](#Equivalencias lógicas#Implicación#Doble implicación)
-  - [Equivalencia lógica](#Equivalencias lógicas#Equivalencia lógica)
-- [Predicados y cuantificadores](#Predicados y cuantificadores)
-  - [Cuantificador existencial](#Predicados y cuantificadores#Cuantificador existencial)
-  - [Cuantificador universal](#Predicados y cuantificadores#Cuantificador universal)
-- [Cuantificador anidado](#Cuantificador anidado)
-  - [Teorema De Morgan para proposiciones cuantificadas](#Cuantificador anidado#Teorema De Morgan para proposiciones cuantificadas)
-  - [Conmutación de cuantificadores anidados](#Cuantificador anidado#Conmutación de cuantificadores anidados)
-  - [Negación de cuantificadores anidados](#Cuantificador anidado#Negación de cuantificadores anidados)
-- [Método de Demostración](#Método de Demostración)
-  - [Terminología](#Método de Demostración#Terminología)
-  - [Razonamientos válidos](#Método de Demostración#Razonamientos válidos)
-  - [Métodos de demostración](#Método de Demostración#Métodos de demostración)
-    - [Ejemplo](#Método de Demostración#Métodos de demostración#Ejemplo)
-- [Conjuntos](#Conjuntos)
-    - [Conjuntos especiales](#Conjuntos#Conjuntos especiales)
-  - [Subconjuntos](#Conjuntos#Subconjuntos)
-    - [Subconjunto propio](#Conjuntos#Subconjuntos#Subconjunto propio)
-  - [Características de los conjuntos](#Conjuntos#Características de los conjuntos)
-  - [Número de elementos](#Conjuntos#Número de elementos)
-  - [Conjunto potencia](#Conjuntos#Conjunto potencia)
+- [**Lógica y demostraciones**](#**Lógica y demostraciones**)
+  - [Lógica proposicional](#**Lógica y demostraciones**#Lógica proposicional)
+    - [Resumen de operadores](#**Lógica y demostraciones**#Lógica proposicional#Resumen de operadores)
+  - [Precedencia](#**Lógica y demostraciones**#Precedencia)
+  - [Tautología, contradicción y contingencia](#**Lógica y demostraciones**#Tautología, contradicción y contingencia)
+- [**Equivalencias lógicas**](#**Equivalencias lógicas**)
+  - [Implicación](#**Equivalencias lógicas**#Implicación)
+    - [Implicación simple](#**Equivalencias lógicas**#Implicación#Implicación simple)
+    - [Implicación Reciproca](#**Equivalencias lógicas**#Implicación#Implicación Reciproca)
+    - [Implicación Contrareciproca](#**Equivalencias lógicas**#Implicación#Implicación Contrareciproca)
+    - [Implicación Inversa](#**Equivalencias lógicas**#Implicación#Implicación Inversa)
+    - [Doble implicación](#**Equivalencias lógicas**#Implicación#Doble implicación)
+  - [Equivalencia lógica](#**Equivalencias lógicas**#Equivalencia lógica)
+- [**Predicados y cuantificadores**](#**Predicados y cuantificadores**)
+  - [Cuantificador existencial](#**Predicados y cuantificadores**#Cuantificador existencial)
+  - [Cuantificador universal](#**Predicados y cuantificadores**#Cuantificador universal)
+- [**Cuantificador anidado**](#**Cuantificador anidado**)
+  - [Teorema De Morgan para proposiciones cuantificadas](#**Cuantificador anidado**#Teorema De Morgan para proposiciones cuantificadas)
+  - [Conmutación de cuantificadores anidados](#**Cuantificador anidado**#Conmutación de cuantificadores anidados)
+  - [Negación de cuantificadores anidados](#**Cuantificador anidado**#Negación de cuantificadores anidados)
+- [**Método de Demostración**](#**Método de Demostración**)
+  - [Terminología](#**Método de Demostración**#Terminología)
+  - [Razonamientos válidos](#**Método de Demostración**#Razonamientos válidos)
+  - [Métodos de demostración](#**Método de Demostración**#Métodos de demostración)
+    - [Ejemplo](#**Método de Demostración**#Métodos de demostración#Ejemplo)
+- [**Conjuntos**](#**Conjuntos**)
+    - [Conjuntos especiales](#**Conjuntos**#Conjuntos especiales)
+  - [Subconjuntos](#**Conjuntos**#Subconjuntos)
+    - [Subconjunto propio](#**Conjuntos**#Subconjuntos#Subconjunto propio)
+  - [Características de los conjuntos](#**Conjuntos**#Características de los conjuntos)
+    - [Número de elementos](#**Conjuntos**#Características de los conjuntos#Número de elementos)
+    - [Conjunto potencia](#**Conjuntos**#Características de los conjuntos#Conjunto potencia)
+    - [Producto cartesiano](#**Conjuntos**#Características de los conjuntos#Producto cartesiano)
+  - [Tuplas](#**Conjuntos**#Tuplas)
+- [**Operaciones con conjuntos**](#**Operaciones con conjuntos**)
+    - [Igualdad de dos conjuntos](#**Operaciones con conjuntos**#Igualdad de dos conjuntos)
+  - [Principio de inclusión-exclusión](#**Operaciones con conjuntos**#Principio de inclusión-exclusión)
+- [**Funciones**](#**Funciones**)
+  - [Función inyectiva, sobreyectiva y biyectiva](#**Funciones**#Función inyectiva, sobreyectiva y biyectiva)
+  - [Función inversa y composición de dos funciones](#**Funciones**#Función inversa y composición de dos funciones)
 
 </div>
 {{<toc>}}
 
-# Lógica y demostraciones
+# **Lógica y demostraciones**
 
 ## Lógica proposicional
 
@@ -139,7 +147,7 @@ una **contingencia**.
 
 ---
 
-# Equivalencias lógicas
+# **Equivalencias lógicas**
 
 ## Implicación
 
@@ -230,7 +238,7 @@ como $p \equiv q$.
 
 ---
 
-# Predicados y cuantificadores
+# **Predicados y cuantificadores**
 
 - Sea P(x) un enunciado que incluye a la variable $x \in D$, se denomina
   Función Proposicional, o predicado, al enunciado $P$ si, para cada valor 
@@ -264,7 +272,7 @@ $$
 
 ---
 
-# Cuantificador anidado
+# **Cuantificador anidado**
 
 ## Teorema De Morgan para proposiciones cuantificadas
 
@@ -305,7 +313,7 @@ $$
 
 ---
 
-# Método de Demostración
+# **Método de Demostración**
 
 ## Terminología
 
@@ -386,7 +394,7 @@ a^2 + b^2 = c^2
 $$
 
 
-# Conjuntos
+# **Conjuntos**
 
 Los conjuntos se emplean para agrupar *cosas* que tienen propiedades parecidas. 
 Una definición más formal sería:
@@ -422,6 +430,8 @@ $\\{\emptyset\\}$, ya que el último es un conjunto que tiene un elemento.
 
 Se dice que un conjunto $A$ es un subconjunto de otro conjunto $B$ si y solo si
 todo elemento de $A$ pertenece a $B$. Esto se denota como $A \subseteq B$.
+Para utilizar cuantificadores podemos escribir: 
+$A \subseteq B \iff \forall x (x \in A \implies x \in B)$
 
 Es importante distinguir que $A \subseteq B$ no es lo mismo que $B \subseteq A$
 Como se podría ver con dos conjuntos $A=\\{ 1,2,3 \\}$ y $A=\\{ 1,2,3,4,5 \\}$.
@@ -444,7 +454,7 @@ $$
 \end{align}
 $$
 
-> #### **Teorema**
+> #### Teorema
 > Para cualquier conjunto A se tiene:
 > 1. $\emptyset \subseteq A$: empleando la definición de subconjuntos a través de
 >    cuantificadores se puede escribir: 
@@ -463,7 +473,7 @@ donde $A \neq B$, se denota como $A \subset B$, y se dice que A es un
 
 ## Características de los conjuntos
 
-## Número de elementos
+### Número de elementos
 
 El número de elementos de un conjunto se puede definir como: cuando hay $n$
 elementos **distintos** en un conjunto $A$, donde $n$ es un entero finito no
@@ -471,8 +481,132 @@ negativo, se dice $A$ es un conjunto finito, y que $n$ es el **cardinal**  de
 $A$. El cardinal de $A$ se denota como $n = |A|$. Cuando $A$ no es infinito, se
 dice que el conjunto es infinito.
 
-## Conjunto potencia
+### Conjunto potencia
 
 También denominado como *conjunto de parte de un conjuntos*, dado un conjunto
 $A$, el conjunto potencia es el conjunto formado por todos los subconjuntos de
 $A$, y se denota como: $\wp (A)$.
+
+Otra definición es: es un conjunto formado por todos los subconjuntos que se
+forman a partir del conjunto A finito dado.
+
+Ejemplo:
+
+$$
+ \begin{align}
+  A &= \left( a, b, c \right) \\\
+  B(A) &= \left( \left( a \right), \left( b  \right), \left( c \right), \left( ab \right) \left( ac \right) \left( bc \right) \left( abc \right) \left( \emptyset  \right) \right) 
+ \end{align}
+$$
+
+Se puede pedir la demostración de $|\wp(A)| = 2^n$.
+
+### Producto cartesiano
+
+El producto cartesiano de dos conjuntos da como resultado otro conjunto, y se
+denota como $A \times B$, y es el conjunto formado por todos los pares
+ordenados $(a,b)$ donde $A \times B = ((a,b) | a \in A \land b \in B)$.
+
+Los productos cartesianos $A \times B$ y $B \times A$ nunca es igual al menos que $A=B$ o alguno de $A$ o $B$ sea igual a $\emptyset$.
+
+TODO: Escribir ejemplo de página 33
+
+## Tuplas
+
+Una tupla ordenada $(a_1, a_2, cdots, a_n)$ y $(b_1, b_2, cdots, b_n)$, son
+iguales si y solo si $a_1 = b_1$, $a_2 = b_2$, $\cdots$ y $a_n = b_n$.
+
+# **Operaciones con conjuntos** 
+
+**Unión de dos conjuntos:** la unión de dos conjuntos es el conjunto que
+contiene los elementos que, o bien están en $A$, en $B$ o en ambos. Se denota
+como $A \cup B$. Esto también se puede escribir como:
+$(x | x \in A \lor x \in B)$
+
+**Intersección de dos conjuntos:** la intersección de los conjuntos $A$ y $B$
+es el conjunto que tiene los elementos en común de $A$ y $B$. Se denota como 
+$A \cap B$, que significa: $(x | x \in A \land x \in B)$
+
+**Diferencia de dos conjuntos:** la diferencia de los conjuntos $A$ y $B$ es el
+conjunto que contiene los elementos en $A$ pero no en $B$. Se denota como
+$A-B$. Significa: $(x|x \in A \land x \not \in B)$. Es importante distinguir
+que no es commutable.
+
+**Diferencia simétrica de dos conjuntos:** la diferencia simétrica de los
+conjuntos $A$ y $B$ es el conjunto que contiene los elementos que están en $A$
+o en $B$, pero no en ambos. Esto se denota como $A \oplus B$. Esto significa:
+$(x | (x \in A \land x \not \in B) \lor (x \in B \land x \not \in A))$
+
+Otras formas de escribirlo son:
+
+$$
+ \begin{align}
+  A \oplus B = (A-B) \cup (B-A) \\\
+  A \oplus = (A \cup B) - (A \cap B)
+ \end{align}
+$$
+
+**Complemento de un conjunto:** sea $U$ el conjunto universal. El complemento
+del conjunto $A$ a la diferencia $U-A$, o sea, es el conjunto que contiene los
+elementos que están en $U$ pero no están en $A$. Se denota como $\bar{A}$, y
+significa $\bar{A} = (x | x \not \in A)$.
+
+**Unión generalizada:** es la unión de una colección finita de conjuntos. 
+
+### Igualdad de dos conjuntos
+
+Se pueden encontrar tres métodos según la bibliografía para probar que los
+conjuntos $A$ y $B$ son iguales. Esto equivale a demostrar que:
+
+1. Por *doble inclusión*, es decir que si se puede probar que $A \subseteq B$ y
+   $B \subseteq A$, entonces $A = B$.
+2. Utilizando *notación constructiva* de conjuntos. (más usado en práctica)
+3. Utilizando Tabla de Pertenencia. En esto se toma un elemento $x$ y se
+   considera cada combinación de conjuntos a la que puede pertenecer,
+   verificando que los elementos de una misma combinación pertenecen a ambos
+   conjuntos de la identidad a probar. Son similares a las tablas de verdad.
+
+## Principio de inclusión-exclusión
+
+Se ve más tarde.
+
+# **Funciones** 
+
+Sean los conjuntos $A$ y $B$:
+- Una función $f$ de $A$ en $B$ es una asignación de un **único** elemento de
+  $B$ a **cada** elemento de $A$.
+- Una función $f$ de $A$ en $B$ es un subconjunto del producto cartesiano 
+  $A \times B$ tal que cumple con dos propiedades:
+  - Existencia: cada elemento $a \in A$ tiene asignado un $b \in B$.
+  - Unicidad: cad elemento $a in A$ tiene asignado un único $b \in B$.
+
+Es importante conocer lo que es un *dominio*, *codominio*, *imagen*,
+*preimagen* y *rango*.
+
+TODO: Completar
+
+## Función inyectiva, sobreyectiva y biyectiva
+
+**Función inyectiva:** se dice que una función $f: A \implies B$ es inyectiva
+si para cada $b \in  B$ existe a lo sumo un $a \in A$.
+
+**Función sobreyectiva:** se dice que una función $f: A \implies B$ es
+sobreyectiva, si el rango de $f$ es todo $B$. Esto es, para todo elemento 
+$y \in B$, existe un $x \in A$ tal que $f(x) = y$.
+
+**Función biyectiva:** una función $f: A \implies B$ es biyectiva cuando es
+inyectiva y sobreyectiva simultáneamente. 
+
+## Función inversa y composición de dos funciones
+
+**Función inversa:** sea $f: A \implies B$ una función biyectiva del conjunto A
+en otro B. La función inversa $f$ es la función $B \implies A$ que asigna a
+cada elemento de $b \in B$ el único elemento $a \in A$ tal que $f(a)=b$, y se
+denota $f^{-1}=((b.a)|(a,b) = f$.
+
+**Composición de dos funciones:** sean los conjuntos $A$, $B$ y $C$, y las 
+funciones $g: A \implies B$ y $f: B \implies C$. La composición de la función
+$f$ con $g$ se denota con $f(g(a))$ para todo $a \in A$, siempre que 
+$\text{Imagen} (g) \subseteq \text{Dominio} (f)$. 
+
+

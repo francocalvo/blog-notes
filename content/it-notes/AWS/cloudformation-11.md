@@ -39,7 +39,7 @@ There are four special keys:
 Define grouping and ordering of input parameters. It looks like this:
 
 ```YAML
-Metada:
+Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
       - Label:
@@ -55,3 +55,6 @@ Metada:
       SubnetID:
         default: "Which subnet should this be deployed to?"
 ```
+
+This allows us to give a group of parameters a label to make the template more
+clear. 

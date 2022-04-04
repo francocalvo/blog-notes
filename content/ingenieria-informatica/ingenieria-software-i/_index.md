@@ -12,6 +12,7 @@ geekdocCollapseSection: true
   - [Virtualidad](#Organización de la cátedra#Virtualidad)
   - [Aprobación](#Organización de la cátedra#Aprobación)
 - [Unidades](#Unidades)
+- [Practicas](#Practicas)
 
 </div>
 {{<toc>}}
@@ -47,5 +48,9 @@ menor a 50%, una asistencia de 80% y un coloquio.
 
 # Unidades
 
-1. [Sistemas de información](unidad-1)
-1. [Ingeniería de software](unidad-2)
+1. [Unidad 1: Sistemas de información](unidad-1)
+2. [Unidad 2: Ingeniería de software](unidad-2)
+
+# Practicas
+
+1. [Unidad 1](practica-1)
