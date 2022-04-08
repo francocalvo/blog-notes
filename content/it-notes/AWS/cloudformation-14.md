@@ -5,6 +5,7 @@
 - [Table of contents](#Table of contents)
 - [Deployment](#Deployment)
 - [Updating](#Updating)
+- [Cross Stacks](#Cross Stacks)
 
 </div>
 {{<toc>}}
@@ -16,7 +17,7 @@ update a nested stack, you always  need to update the parent.
 
 # Deployment
 
-We can **output** values for others stacks like this:
+We can **output** values for others stacks inside the nested stack like this:
 
 ```YAML
 Outputs:
@@ -45,4 +46,12 @@ Properties:
 # Updating
 
 To update a nested stack, we need to update the parent. For this, we'll need to
-update a new file to a S3 Bucket and change the URL for the new one. 
+update a new file to a S3 Bucket and change the URL for the new one or use a
+"version" of the same S3 object.
+
+# Cross Stacks
+
+These are helpful when stacks have different lifecycles. We can use the Outputs
+Export and `Fn::ImportValue` for things like VPC Id, etc.
+
+On the other hand, nested stacks are helpful when components must be reused. 

@@ -332,6 +332,4 @@ Resources:
 11. [CloudFormation Metadata](cloudformation-11)
 12. [CloudFormation Init](cloudformation-12)
 13. [CloudFormation Drift](cloudformation-13)
-
-
-12. [Nested Stacks](cloudformation-14)
+14. [Nested Stacks](cloudformation-14)

@@ -47,3 +47,4 @@ El libro a usar es:
 ## Apuntes por unidad
 
 - [Unidad 1: Lógica](unidad-1)
+- [Unidad 3](unidad-3)
