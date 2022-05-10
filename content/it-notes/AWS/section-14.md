@@ -22,7 +22,6 @@
   - [StackSets](#Others#StackSets)
 - [CloudFormation Drift](#CloudFormation Drift)
 - [Example](#Example)
-- [Extra course in CloudFormation](#Extra course in CloudFormation)
 
 </div>
 {{<toc>}}
@@ -319,17 +318,3 @@ Resources:
         CidrIp: 192.168.1.1/32
 ```
 
----
-
-# Extra course in CloudFormation
-
-5. [CloudFormation Parameters](CloudFormation-5)
-6. [CloudFormation Resources](cloudformation-6)
-7. [CloudFormation Mappings](cloudformation-7)
-8. [CloudFormation Outputs](cloudformation-8)
-9. [CloudFormation Conditions](cloudformation-9)
-10. [CloudFormation Rules](cloudformation-10)
-11. [CloudFormation Metadata](cloudformation-11)
-12. [CloudFormation Init](cloudformation-12)
-13. [CloudFormation Drift](cloudformation-13)
-14. [Nested Stacks](cloudformation-14)

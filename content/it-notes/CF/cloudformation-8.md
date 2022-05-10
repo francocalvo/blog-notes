@@ -1,3 +1,7 @@
+---
+title: 08. CF Outputs
+---
+
 # Table of contents
 <div class='hidden'>
 # Contents

@@ -1,3 +1,7 @@
+---
+title: 14. Nested Stacks
+---
+
 # Table of contents
 <div class='hidden'>
 # Contents

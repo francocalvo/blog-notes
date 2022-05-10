@@ -1,16 +1,17 @@
+---
+title: 11. CF Metadata
+---
+
 # Table of contents
 <div class='hidden'>
 # Contents
 
 - [Table of contents](#Table of contents)
-- [Metadata](#Metadata)
-  - [Special keys](#Metadata#Special keys)
-    - [Interface](#Metadata#Special keys#Interface)
+  - [Special keys](#Table of contents#Special keys)
+    - [Interface](#Table of contents#Special keys#Interface)
 
 </div>
 {{<toc>}}
-
-# Metadata
 
 It's an optional section to include arbitrary YAML. For example:
 

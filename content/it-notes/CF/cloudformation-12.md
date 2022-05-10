@@ -1,3 +1,7 @@
+---
+title: 12. CFN-Init
+--- 
+
 # Table of contents
 <div class='hidden'>
 # Contents

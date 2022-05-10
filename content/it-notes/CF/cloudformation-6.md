@@ -1,3 +1,7 @@
+---
+title: 06. CF Resources
+---
+
 # Table of contents
 <div class='hidden'>
 # Contents
